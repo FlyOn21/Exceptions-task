@@ -22,12 +22,4 @@ public class TelemetryRandomGenerator {
             default -> throw new IllegalArgumentException("Invalid parameter name: " + paramName);
         };
     }
-
-    public static void main(String[] args) {
-        double randomTemperature = generateRandomTelemetryParams("temperature");
-        System.out.println("Random Temperature: " + randomTemperature);
-
-        double randomHumidity = generateRandomTelemetryParams("humidity");
-        System.out.println("Random Humidity: " + randomHumidity);
-    }
 }
